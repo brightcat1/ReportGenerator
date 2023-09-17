@@ -1,7 +1,8 @@
 package reportgenerator.renderers;
 
+import org.springframework.stereotype.Component;
 import reportgenerator.models.Report;
-
+@Component
 public class HTMLRenderer implements ReportRenderer {
 
     @Override

@@ -17,7 +17,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-    implementation("org.apache.pdfbox:pdfbox:2.0.29")
+    testImplementation("org.mockito:mockito-core:3.+")
 }
 
 tasks.test {

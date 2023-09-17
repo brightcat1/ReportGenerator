@@ -9,7 +9,7 @@ const Home: React.FC = () => {
         <div className={styles.container}>
             <Header />
             <main>
-                <p>This is the main content of the report generator.</p>
+                <p class="main-content">This is the main content of the report generator.</p>
                 <DownloadForm />
             </main>
         </div>

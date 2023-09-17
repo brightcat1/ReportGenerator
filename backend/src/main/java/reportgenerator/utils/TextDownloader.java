@@ -2,7 +2,9 @@ package reportgenerator.utils;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 
+@Component("textDownloader")
 public class TextDownloader implements ReportDownloader {
     @Override
     public ResponseEntity<byte[]> downloadReport(byte[] reportData) {

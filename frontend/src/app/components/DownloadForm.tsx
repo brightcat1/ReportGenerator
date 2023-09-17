@@ -11,7 +11,7 @@ const DownloadForm: React.FC = () => {
   const handleDownload = async () => {
     if (!format) return;
 
-    const API_ENDPOINT = process.env.NEXT_PUBLIC_API_ENDPOINT || 'http://0.0.0.0:8080';
+    const API_ENDPOINT = process.env.NEXT_PUBLIC_API_ENDPOINT || 'http://localhost:8080';
     const endpoint = `${API_ENDPOINT}/download/report/${format}`;
     try {
       const response = await fetch(endpoint, {
@@ -74,7 +74,6 @@ const DownloadForm: React.FC = () => {
         <label>Format: </label>
         <select value={format} onChange={(e) => setFormat(e.target.value)}>
           <option value="" disabled>Select format</option>
-          <option value="pdf">PDF</option>
           <option value="html">HTML</option>
           <option value="text">Text</option>
         </select>

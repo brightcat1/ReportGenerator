@@ -21,17 +21,14 @@ public class PDFRenderer implements ReportRenderer {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
 
         try (PDPageContentStream contentStream = new PDPageContentStream(document, page)) {
-
             contentStream.beginText();
-            public static final PDType1Font customHelveticaBold = new PDType1Font("Helvetica-Bold");
-            contentStream.setFont(customHelveticaBold, 16);
+            contentStream.setFont(PDType1Font.HELVETICA_BOLD, 16);
             contentStream.newLineAtOffset(100, 700);
             contentStream.showText("Title: " + report.getTitle());
             contentStream.newLineAtOffset(0, -40);
             contentStream.showText("Subtitle: " + report.getSubTitle());
             contentStream.newLineAtOffset(0, -40);
-            public static final PDType1Font customHelvetica = new PDType1Font("Helvetica");
-            contentStream.setFont(customHelvetica, 12);
+            contentStream.setFont(PDType1Font.HELVETICA, 12);
             contentStream.showText(report.getContent());
             contentStream.newLineAtOffset(0, -40);
             contentStream.showText("Footer: " + report.getFooter());

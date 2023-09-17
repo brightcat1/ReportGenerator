@@ -17,37 +17,48 @@ public class ReportController {
 
     @GetMapping("/download/report/pdf")
     @ResponseBody
-    public ResponseEntity<byte[]> downloadReportAsPdf(@RequestBody ReportRequest reportRequest, @Qualifier("pdfRenderer") ReportRenderer reportRenderer) {
-        Report renderReport = new Report.Builder(reportRequest.getFileFormat()).title(reportRequest.getTitle()).subTitle(reportRequest.getSubTitle()).content(reportRequest.getContent()).footer(reportRequest.getFooter()).build();
+    public ResponseEntity<byte[]> downloadReportAsPdf(@RequestBody ReportRequest reportRequest, @Qualifier("pdfRenderer") ReportRenderer reportRenderer, @Qualifier("pdfDownloder") ReportDownloader reportDownloader) {
+        Report renderReport = new Report.Builder()
+                .title(reportRequest.getTitle())
+                .subTitle(reportRequest.getSubTitle())
+                .content(reportRequest.getContent())
+                .footer(reportRequest.getFooter())
+                .build();
         byte[] reportData = reportRenderer.render(renderReport);
-        return reportDownloader.downloadAsPdf(reportData);
+        return reportDownloader.downloadReport(reportData);
     }
 
     @GetMapping("/download/report/html")
     @ResponseBody
-    public ResponseEntity<byte[]> downloadReportAsHtml(@RequestBody ReportRequest reportRequest, @Qualifier("htmlRenderer") ReportRenderer reportRenderer) {
-        Report renderReport = new Report.Builder(reportRequest.getFileFormat()).title(reportRequest.getTitle()).subTitle(reportRequest.getSubTitle()).content(reportRequest.getContent()).footer(reportRequest.getFooter()).build();
+    public ResponseEntity<byte[]> downloadReportAsHtml(@RequestBody ReportRequest reportRequest, @Qualifier("htmlRenderer") ReportRenderer reportRenderer, @Qualifier("htmlDownloder") ReportDownloader reportDownloader) {
+        Report renderReport = new Report.Builder()
+                .title(reportRequest.getTitle())
+                .subTitle(reportRequest.getSubTitle())
+                .content(reportRequest.getContent())
+                .footer(reportRequest.getFooter())
+                .build();
         byte[] reportData = reportRenderer.render(renderReport);
-        return reportDownloader.downloadAsPdf(reportData);
+        return reportDownloader.downloadReport(reportData);
     }
 
     @GetMapping("/download/report/text")
     @ResponseBody
-    public ResponseEntity<byte[]> downloadReportAsText(@RequestBody ReportRequest reportRequest, @Qualifier("textRenderer") ReportRenderer reportRenderer) {
-        Report renderReport = new Report.Builder(reportRequest.getFileFormat()).title(reportRequest.getTitle()).subTitle(reportRequest.getSubTitle()).content(reportRequest.getContent()).footer(reportRequest.getFooter()).build();
+    public ResponseEntity<byte[]> downloadReportAsText(@RequestBody ReportRequest reportRequest, @Qualifier("textRenderer") ReportRenderer reportRenderer, @Qualifier("textDownloder") ReportDownloader reportDownloader) {
+        Report renderReport = new Report.Builder()
+                .title(reportRequest.getTitle())
+                .subTitle(reportRequest.getSubTitle())
+                .content(reportRequest.getContent())
+                .footer(reportRequest.getFooter())
+                .build();
         byte[] reportData = reportRenderer.render(renderReport);
-        return reportDownloader.downloadAsPdf(reportData);
+        return reportDownloader.downloadReport(reportData);
     }
+
     public static class ReportRequest {
-        private String fileFormat;
         private String title;
         private String subTitle;
         private String content;
         private String footer;
-
-        public String getFileFormat() {
-            return fileFormat;
-        }
 
         public String getTitle() {
             return title;

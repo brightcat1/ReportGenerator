@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 const DownloadForm: React.FC = () => {
-  const [format, setFormat] = useState('');  // pdf, html, or text
+  const [format, setFormat] = useState('');  // html or text
   const [title, setTitle] = useState('');
   const [subTitle, setSubTitle] = useState('');
   const [content, setContent] = useState('');

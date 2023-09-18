@@ -1,11 +1,10 @@
 # ReportGenerator
 
-HTML、PDF、テキスト形式でレポートを簡単に出力できるWebアプリケーションです。
-Java、Spring Boot、Next.js、TypeScriptあたりの技術を使いつつ、StrategyやBuilderといったデザインパターンもしています。
+HTMLとテキスト形式で手軽にレポートを生成するWebアプリケーション、ReportGeneratorです。Java、Spring Boot、Next.js、TypeScriptなどの技術を駆使しており、StrategyやBuilderのデザインパターンも活用しています。
 
 ## 説明
 
-ReportGeneratorを使用すると、タイトルやサブタイトルなどの内容を入力し、"Generate Report"ボタンをクリックするとtxtまたはhtml形式でのダウンロードが可能です。
+ReportGeneratorを使えば、タイトルやサブタイトルなどの情報を簡単に入力し、"Generate Report"ボタンをクリックするだけでレポートをダウンロードできます。使いやすさを前面に出したこのアプリケーションは、ユーザーの様々なニーズにもしっかりと応えられる構造になっています。
 
 ## 実装されているデザインパターン
 

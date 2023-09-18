@@ -1,6 +1,6 @@
 # ReportGenerator
 
-A modern web application that effortlessly generates reports in HTML, PDF, and text formats. This project not only showcases the integration of contemporary technologies such as Java, Spring Boot, Next.js, and TypeScript but also demonstrates the practical application of design patterns like Strategy and Builder.
+A modern web application that effortlessly generates reports in HTML and text formats. This project not only showcases the integration of contemporary technologies such as Java, Spring Boot, Next.js, and TypeScript but also demonstrates the practical application of design patterns like Strategy and Builder.
 
 ## Description
 

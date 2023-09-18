@@ -20,12 +20,13 @@ ReportGeneratorを使用すると、タイトルやサブタイトルなどの�
 - Next.js
 - TypeScript
 
-## 使用されているライブラリとツール
+## 使用されているライブラリとツール (Apache License 2.0のもとでライセンスされています)
 
 このプロジェクトでは、次のライブラリとツールを使用しています:
 
-- Gradle - [公式サイト](https://gradle.org/)
-- Spring Boot (バージョン 3.1.3) - [公式サイト](https://spring.io/projects/spring-boot)
-- JUnit 5 (バージョン 5.9.1) - [公式サイト](https://junit.org/junit5/)
-- TypeScript (バージョン 5.2.2) - [公式サイト](https://www.typescriptlang.org/)
-    - このライブラリはApache License 2.0のもとでライセンスされています。
+- [Gradle](https://gradle.org/) - 公式サイト
+- [Spring Boot (バージョン 3.1.3)](https://spring.io/projects/spring-boot) - 公式サイト
+- [JUnit 5 (バージョン 5.9.1)](https://junit.org/junit5/) - 公式サイト
+- [TypeScript (バージョン 5.2.2)](https://www.typescriptlang.org/) - 公式サイト
+
+注: このプロジェクトでは他のライブラリも使用していますが、READMEに記載が必要なもののみをこちらにハイライトしています。

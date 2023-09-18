@@ -19,12 +19,13 @@ Built with an array of modern technologies:
 - Next.js
 - TypeScript
 
-## Libraries & Tools Used
+## Libraries & Tools Used (Licensed under Apache License 2.0)
 
 This project utilizes the following libraries and tools:
 
-- Gradle - [Official Site](https://gradle.org/)
-- Spring Boot (version 3.1.3) - [Official Site](https://spring.io/projects/spring-boot)
-- JUnit 5 (version 5.9.1) - [Official Site](https://junit.org/junit5/)
-- TypeScript (version 5.2.2) - [Official Site](https://www.typescriptlang.org/)
-    - This library is licensed under the Apache License 2.0.
+- [Gradle](https://gradle.org/) - Official Site
+- [Spring Boot (version 3.1.3)](https://spring.io/projects/spring-boot) - Official Site
+- [JUnit 5 (version 5.9.1)](https://junit.org/junit5/) - Official Site
+- [TypeScript (version 5.2.2)](https://www.typescriptlang.org/) - Official Site
+
+Note: Other libraries are used in this project, but only those requiring mention in the README are highlighted here.
